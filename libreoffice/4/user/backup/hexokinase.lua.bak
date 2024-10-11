@@ -1,0 +1,13 @@
+return {
+  "RRethy/vim-hexokinase",
+  run = "make hexokinase",
+  config = function()
+    require('hexokinase').setuo()
+    -- Habilite o plugin para diferentes modos (virtual, sinalizadores, etc.)
+    -- vim.g.Hexokinase_optInPatterns = "full_hex,rgb,rgba,hsl,hsla,colour_names"
+
+    -- Opcional: Defina teclas de atalho ou outras configurações adicionais aqui.
+    -- Por exemplo, para ativar/desativar o Hexokinase manualmente:
+    -- vim.api.nvim_set_keymap('n', '<leader>hc', ':HexokinaseToggle<CR>', { noremap = true, silent = true })
+  end
+}
